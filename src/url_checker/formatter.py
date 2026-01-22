@@ -1,7 +1,5 @@
 """Output formatting with color support."""
 
-import sys
-
 from .checker import URLCheckResult
 
 # Use colorama for cross-platform color support (Windows compatibility)

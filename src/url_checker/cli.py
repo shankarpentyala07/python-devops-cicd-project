@@ -1,7 +1,6 @@
 """Click-based CLI interface."""
 
 import sys
-from typing import Tuple
 
 import click
 
@@ -26,7 +25,7 @@ from .logger import setup_logger
     help="Enable verbose (DEBUG) logging",
 )
 @click.version_option(version=__version__, prog_name="check-urls")
-def main(urls: Tuple[str, ...], timeout: int, verbose: bool) -> None:
+def main(urls: tuple[str, ...], timeout: int, verbose: bool) -> None:
     """
     Check HTTP status of multiple URLs.
 
