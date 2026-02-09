@@ -41,6 +41,8 @@ dev = [
     "black>=23.3.0",
     "mypy>=1.7.0",
     "types-requests>=2.31.0",
+    "types-colorama>=0.4.15",
+    "bandit"
 ]
 
 [project.scripts]
@@ -88,3 +90,7 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "-v --cov=url_checker --cov-report=term-missing"
+
+[tool.bandit]
+exclude_dirs = [".venv", "__pycache__", "build", "dist"]
+
